@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+p,
+li,
+ul {
+    font-size: 2.5vh;
+}
+
+ul {
+    display: inline-table;
+}
+
+li {
+    border-radius: 6px;
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+}
+
+li:hover {
+    background: #132470;
+}
+
+.text {
+    margin: 2rem 0;
+    padding: 0.5rem;
+    width: 50vw;
+    position: absolute;
+    top: 20%;
+    background: rgba(0, 0, 0, 0.692);
+}
+
+.title {
+    color: white;
+    font-family: 'Hahmlet', serif;
+    font-size: 4vh;
+    border-left: 0.5vw solid #132470;
+    padding-left: 1rem;
+}
+
+.text2 {
+    width: 50vw;
+    padding: 0 5rem 0 3rem;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.wrap3 {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+}
+
+.card3 img {
+    width: 20vw;
+    padding-bottom: 1rem;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.692);
+    padding: 0.4rem;
+}
+
+.card3 p {
+    font-size: 2.5vh;
+    color: white;
+}
+
+.card3 h3 {
+    font-size: 3vh;
+    color: white;
+}
+
+.link {
+    color: white;
+}
+
+.link:hover {
+    color: #7f8ed3;
+}
+
+.card3 {
+    width: 30vw;
+}
+
+.slide1 {
+    width: 90vw;
+    height: 100vh;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 496vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.one {
+    background-image: url("images/img2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.two {
+    background: white;
+    display: flex;
+}
+
+.three {
+    background: black;
+    background-image: url("images/img3.jpg");
+    background-size: cover;
+}
+
+.threeptfive {
+    display: flex;
+    text-align: center;
+}
+
+.threeptfive h1 a {
+    color: black;
+    text-decoration: none;
+}
+
+.threeptfive h1 a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.four {
+    background-image: url("images/blobs.png");
+    background-size: cover;
+    display: flex;
+}
+
+.five {
+    background-image: url("images/IMG4.jpg");
+    background-size: cover;
+}
+
+.wrap4 {
+    width: 100vw;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 70%;
+    height: 80%;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:focus {
+    outline: 0;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 8px 0 white;
+}
+
+.flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.text35 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.textname {
+    background: rgba(0, 0, 0, 0.692);
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+.textname:hover {
+    background: black;
+}
+
+.textname a {
+    color: white;
+}
+
+.textname a:hover,
+address a:hover,
+.para a:hover {
+    color: #7f8ed3;
+}
+
+address a,
+.para,
+.para a {
+    color: white;
+}
+
+.c1 {
+    background-image: url("images/vs.jpeg");
+    background-size: cover;
+}
+
+.c2 {
+    background-image: url("images/ci.jpg");
+    background-size: cover;
+}
+
+.c3 {
+    background-image: url("images/ds.jpg");
+    background-size: cover;
+}
+
+.c4 {
+    background-image: url("images/sr.jpg");
+    background-size: cover;
+}
+
+.c5 {
+    background-image: url("images/a.jpg");
+    background-size: cover;
+}
+
+.c6 {
+    background-image: url("images/iot.jpg");
+    background-size: cover;
+}
+
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+span {
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+span:before,
+span:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+}
+
+span:before {
+    margin-right: 10px
+}
+
+span:after {
+    margin-left: 10px
+}
+
+.card5 {
+    background: rgba(0, 0, 0, 0.692);
+    padding: 2rem;
+}
